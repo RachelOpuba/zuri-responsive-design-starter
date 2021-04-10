@@ -345,3 +345,75 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+/* These are are additional styles
+   added in order to style the additional
+   HTML added*/
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    display: none  ;
+
+}
+
+ .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+@media screen and (max-width: 730px) {
+
+ .toggle-button {
+        display: flex;
+    }
+
+ul.nav-links {
+        display: none;
+        cursor: pointer;
+    }
+
+div.nav-bar{
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+ul.nav-links{
+    width: 100%;
+    flex-direction: column;
+
+}
+
+ul li {
+    text-align: right;
+    margin-bottom: 8%;
+    margin-left: 10%;
+}
+    
+ul.nav-links.active {
+    display: flex;
+}
+
+div.snapshot-box-content {
+        display: block;
+       
+    }
+
+div.hero-background-pos {
+        display: none; 
+    }
+
+ div.background {
+        background: #fff;
+        width: auto;
+        height: 100%;
+}
